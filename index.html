@@ -40,19 +40,24 @@
       <legend>My Availability</legend>
       <div>
         <h2>Days Available:</h2>
-        <label>Sunday <input type="checkbox" name="available_field" value="S"></label>
-        <label>Monday <input type="checkbox" name="available_field" value="M"></label>
-        <label>Tuesday <input type="checkbox" name="available_field" value="T"></label>
-        <label>Wednesday <input type="checkbox" name="available_field" value="W"></label>
-        <label>Thursday <input type="checkbox" name="available_field" value="Thu"></label>
-        <label>Friday <input type="checkbox" name="available_field" value="F"></label>
-        <label>Saturday <input type="checkbox" name="available_field" value="Sat"></label>
+        <label>Sunday <input type="checkbox" name="available_field[]" value="S"></label>
+        <label>Monday <input type="checkbox" name="available_field[]" value="M"></label>
+        <label>Tuesday <input type="checkbox" name="available_field[]" value="T"></label>
+        <label>Wednesday <input type="checkbox" name="available_field[]" value="W"></label>
+        <label>Thursday <input type="checkbox" name="available_field[]" value="Thu"></label>
+        <label>Friday <input type="checkbox" name="available_field[]" value="F"></label>
+        <label>Saturday <input type="checkbox" name="available_field[]" value="Sat"></label>
       </div>
       <div>
         <h2>Comments</h2>
         <textarea cols="10" rows="5" name="comments_field"></textarea>
       </div>
     </fieldset>
+    <div>
+      <input type="hidden" name="hidden_field" value="Nickole Ramirez">
+    </div>
+    <input type="submit" value="Submit Query">
+  </form>
 </body>
 
 </html>
