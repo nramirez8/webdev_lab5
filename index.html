@@ -7,33 +7,52 @@
 </head>
 
 <body>
-  <form method="post" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
   <h1>Volunteer Form</h1>
-  <fieldset>
-  <legend>My Info</legend>
-    <div>
-      <label>first name: <input type="text" name="first_name_field"></label>
-    </div>
-    <div>
-      <label>last name: <input type="text" name="last_name_field"></label>
-    </div>
-    <div>
-      <label>phone: <input type="tel" name="phone_field"></label>
-    </div>
-    <div>
-      <label>email: <input type="email" name="email_field"></label>
-    </div>
-    <div>
-      <p>Gender:</p>
-      <label>Male <input type="radio" name="gender_field" value="m"></label>
-      <label>Female <input type="radio" name="gender_field" value="f"></label>     
-    </div>
-    <div>
-      <select name="age_field">
-        <option value="under_18">under 18</option>
-        <option value="over_18" selected>over 18</option>
-      </select>
-    </div>
+  <form method="post" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
+    <fieldset>
+      <legend>My Info</legend>
+      <div>
+        <label>first name: <input type="text" name="first_name_field"></label>
+      </div>
+      <div>
+        <label>last name: <input type="text" name="last_name_field"></label>
+      </div>
+      <div>
+        <label>phone: <input type="tel" name="phone_field"></label>
+      </div>
+      <div>
+        <label>email: <input type="email" name="email_field"></label>
+      </div>
+      <div>
+        <p>Gender:</p>
+        <label>Male <input type="radio" name="gender_field" value="m"></label>
+        <label>Female <input type="radio" name="gender_field" value="f"></label>     
+      </div>
+      <div>
+        <select name="age_field">
+          <option value="under_18">under 18</option>
+          <option value="over_18" selected>over 18</option>
+        </select>
+      </div>
+    </fieldset>
+    
+    <fieldset>
+      <legend>My Availability</legend>
+      <div>
+        <h2>Days Available:</h2>
+        <label>Sunday <input type="checkbox" name="available_field" value="S"></label>
+        <label>Monday <input type="checkbox" name="available_field" value="M"></label>
+        <label>Tuesday <input type="checkbox" name="available_field" value="T"></label>
+        <label>Wednesday <input type="checkbox" name="available_field" value="W"></label>
+        <label>Thursday <input type="checkbox" name="available_field" value="Thu"></label>
+        <label>Friday <input type="checkbox" name="available_field" value="F"></label>
+        <label>Saturday <input type="checkbox" name="available_field" value="Sat"></label>
+      </div>
+      <div>
+        <h2>Comments</h2>
+        <textarea cols="10" rows="5" name="comments_field"></textarea>
+      </div>
+    </fieldset>
 </body>
 
 </html>
