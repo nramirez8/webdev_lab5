@@ -7,6 +7,33 @@
 </head>
 
 <body>
+  <form method="post" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
+  <h1>Volunteer Form</h1>
+  <fieldset>
+  <legend>My Info</legend>
+    <div>
+      <label>first name: <input type="text" name="first_name_field"></label>
+    </div>
+    <div>
+      <label>last name: <input type="text" name="last_name_field"></label>
+    </div>
+    <div>
+      <label>phone: <input type="tel" name="phone_field"></label>
+    </div>
+    <div>
+      <label>email: <input type="email" name="email_field"></label>
+    </div>
+    <div>
+      <p>Gender:</p>
+      <label>Male <input type="radio" name="gender_field" value="m"></label>
+      <label>Female <input type="radio" name="gender_field" value="f"></label>     
+    </div>
+    <div>
+      <select name="age_field">
+        <option value="under_18">under 18</option>
+        <option value="over_18" selected>over 18</option>
+      </select>
+    </div>
 </body>
 
 </html>
